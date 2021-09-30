@@ -1,0 +1,579 @@
+body{
+	
+	height:1000px;
+}
+#button{
+	position:absolute;
+	top:100%;
+}
+.nav{
+	position:fixed;
+	height:70px;
+	width:100%;
+	left:0px;
+	top:0px;
+	background-color:#c70039;
+	
+}
+
+.logo{
+	position:absolute;
+	width:50px;
+	height:50px;
+	top:5px;
+	left:40px;
+	
+}
+.navlist{
+	position:absolute;
+	left:20px;
+	list-style:none;
+	
+}
+
+.navlist .list {	
+	position:relative;
+	float:left;
+	width:78px;
+	height:40px;
+	left:100px;
+	line-height:20px;
+	text-align:center;
+	font-size:16px;
+	color:white;
+	padding:22px;
+	top:-22px;
+	
+}
+.div2{
+	position:absolute;
+	background-color:lightgray;
+	width:100%;
+	height:80px;
+	top:70px;
+	left:0px;
+	
+	
+}
+.h3{
+	position:absolute;
+	left:42%;
+	opacity:.8;
+	
+}
+#age{
+	position:absolute;
+	top:37%;
+	left:8%;
+	width:25%;
+	height:4%;
+	cursor:pointer;
+}
+
+
+.lblFilter{
+	position:absolute;
+	top:33%;
+	left:8%;
+	color:black;
+	font-size:15px;
+}
+
+.divLine1{
+	position:absolute;
+	height:.7%;
+	width:82%;
+	background-color:lightgray;
+	opacity:.8;
+	border-radius:2px;
+	top:45%;
+	left:8%;
+}
+#divTan{
+	position:absolute;
+	width:24%;
+	height:35%;
+	top:52%;
+	left:8%;
+	border:1px solid lightgray;
+	box-shadow:2px 2px 2px 2px lightgray;
+		
+}
+
+#divDavid{
+	position:absolute;
+	width:24%;
+	height:35%;
+	top:52%;
+	left:37.5%;
+	border:1px solid lightgray;
+	box-shadow:2px 2px 2px 2px lightgray;
+	
+}
+#divJessica{
+	position:absolute;
+	width:24%;
+	height:35%;
+	top:52%;
+	left:66%;
+	border:1px solid lightgray;
+	box-shadow:2px 2px 2px 2px lightgray;
+	
+}
+#divTan1{
+	position:absolute;
+	width:24%;
+	height:35%;
+	top:95%;
+	left:8%;
+	border:1px solid lightgray;
+	box-shadow:2px 2px 2px 2px lightgray;
+		
+}
+#divDavid1{
+	position:absolute;
+	width:24%;
+	height:35%;
+	top:95%;
+	left:37.5%;
+	border:1px solid lightgray;
+	box-shadow:2px 2px 2px 2px lightgray;
+	
+}
+#divJessica1{
+	position:absolute;
+	width:24%;
+	height:35%;
+	top:95%;
+	left:66%;
+	border:1px solid lightgray;
+	box-shadow:2px 2px 2px 2px lightgray;
+	
+}
+#userphoto1{
+	position:absolute;
+	top:30px;
+	height:70px;
+	left:30px;
+
+}
+#lblTan{
+	position:absolute;
+	top:32px;
+	left:120px;
+	font-size:22px;
+	font-weight:bold;
+}
+#email1{
+	position:absolute;
+	top:70px;
+	left:122px;
+}
+#lblEmail1{
+	font-weight:bold;
+	
+}
+#mobile1{
+	position:absolute;
+	top:90px;
+	left:122px;
+}
+#lblMob1{
+	font-weight:bold;
+}
+#company1{
+	position:absolute;
+	top:110px;
+	left:122px;
+	
+}
+#lblCom1{
+	font-weight:bold;
+}
+#address1{
+	position:absolute;
+	top:130px;
+	left:122px;
+}
+#lblAdd1{
+	font-weight:bold;
+}
+#website1{
+	position:absolute;
+	top:150px;
+	left:122px;
+}
+#lblWeb1{
+	font-weight:bold;
+}
+#age1{
+	position:absolute;
+	top:170px;
+	left:122px;
+}
+#lblAge1{
+	font-weight:bold;
+}
+#userphoto2{
+	position:absolute;
+	top:30px;
+	height:70px;
+	left:30px;
+}
+#lblDavid{
+	position:absolute;
+	top:32px;
+	left:120px;
+	font-size:22px;
+	font-weight:bold;
+}
+#email2{
+	position:absolute;
+	top:70px;
+	left:122px;
+}
+#lblEmail2{
+	font-weight:bold;
+	
+}
+#mobile2{
+	position:absolute;
+	top:90px;
+	left:122px;
+}
+#lblMob2{
+	font-weight:bold;
+}
+#company2{
+	position:absolute;
+	top:110px;
+	left:122px;
+	
+}
+#lblCom2{
+	font-weight:bold;
+}
+#address2{
+	position:absolute;
+	top:130px;
+	left:122px;
+}
+#lblAdd2{
+	font-weight:bold;
+}
+#website2{
+	position:absolute;
+	top:150px;
+	left:122px;
+}
+#lblWeb2{
+	font-weight:bold;
+}
+#age2{
+	position:absolute;
+	top:170px;
+	left:122px;
+}
+#lblAge2{
+	font-weight:bold;
+}
+#userphoto3{
+	position:absolute;
+	top:30px;
+	height:70px;
+	left:30px;
+}
+#lblJessica{
+	position:absolute;
+	top:32px;
+	left:120px;
+	font-size:22px;
+	font-weight:bold;
+}
+#email3{
+	position:absolute;
+	top:70px;
+	left:122px;
+}
+#lblEmail3{
+	font-weight:bold;
+	
+}
+#mobile3{
+	position:absolute;
+	top:90px;
+	left:122px;
+}
+#lblMob3{
+	font-weight:bold;
+}
+#company3{
+	position:absolute;
+	top:110px;
+	left:122px;
+	
+}
+#lblCom3{
+	font-weight:bold;
+}
+#address3{
+	position:absolute;
+	top:130px;
+	left:122px;
+}
+#lblAdd3{
+	font-weight:bold;
+}
+#website3{
+	position:absolute;
+	top:150px;
+	left:122px;
+}
+#lblWeb3{
+	font-weight:bold;
+}
+#age3{
+	position:absolute;
+	top:170px;
+	left:122px;
+}
+#lblAge3{
+	font-weight:bold;
+}
+#userphoto4{
+	position:absolute;
+	top:30px;
+	height:70px;
+	left:30px;
+}
+#lblTan1{
+	position:absolute;
+	top:32px;
+	left:120px;
+	font-size:22px;
+	font-weight:bold;
+}
+#email4{
+	position:absolute;
+	top:70px;
+	left:122px;
+}
+#lblEmail4{
+	font-weight:bold;
+	
+}
+#mobile4{
+	position:absolute;
+	top:90px;
+	left:122px;
+}
+#lblMob4{
+	font-weight:bold;
+}
+#company4{
+	position:absolute;
+	top:110px;
+	left:122px;
+	
+}
+#lblCom4{
+	font-weight:bold;
+}
+#address4{
+	position:absolute;
+	top:130px;
+	left:122px;
+}
+#lblAdd4{
+	font-weight:bold;
+}
+#website4{
+	position:absolute;
+	top:150px;
+	left:122px;
+}
+#lblWeb4{
+	font-weight:bold;
+}
+#age4{
+	position:absolute;
+	top:170px;
+	left:122px;
+}
+#lblAge4{
+	font-weight:bold;
+}
+
+#userphoto5{
+	position:absolute;
+	top:30px;
+	height:70px;
+	left:30px;
+}
+#lblDavid1{
+	position:absolute;
+	top:32px;
+	left:120px;
+	font-size:22px;
+	font-weight:bold;
+}
+#email5{
+	position:absolute;
+	top:70px;
+	left:122px;
+}
+#lblEmail5{
+	font-weight:bold;
+	
+}
+#mobile5{
+	position:absolute;
+	top:90px;
+	left:122px;
+}
+#lblMob5{
+	font-weight:bold;
+}
+#company5{
+	position:absolute;
+	top:110px;
+	left:122px;
+	
+}
+#lblCom5{
+	font-weight:bold;
+}
+#address5{
+	position:absolute;
+	top:130px;
+	left:122px;
+}
+#lblAdd5{
+	font-weight:bold;
+}
+#website5{
+	position:absolute;
+	top:150px;
+	left:122px;
+}
+#lblWeb5{
+	font-weight:bold;
+}
+#age5{
+	position:absolute;
+	top:170px;
+	left:122px;
+}
+#lblAge5{
+	font-weight:bold;
+}
+
+#userphoto6{
+	position:absolute;
+	top:30px;
+	height:70px;
+	left:30px;
+}
+#lblJessica1{
+	position:absolute;
+	top:32px;
+	left:120px;
+	font-size:22px;
+	font-weight:bold;
+}
+#email6{
+	position:absolute;
+	top:70px;
+	left:122px;
+}
+#lblEmail6{
+	font-weight:bold;
+	
+}
+#mobile6{
+	position:absolute;
+	top:90px;
+	left:122px;
+}
+#lblMob6{
+	font-weight:bold;
+}
+#company6{
+	position:absolute;
+	top:110px;
+	left:122px;
+	
+}
+#lblCom6{
+	font-weight:bold;
+}
+#address6{
+	position:absolute;
+	top:130px;
+	left:122px;
+}
+#lblAdd6{
+	font-weight:bold;
+}
+#website6{
+	position:absolute;
+	top:150px;
+	left:122px;
+}
+#lblWeb6{
+	font-weight:bold;
+}
+#age6{
+	position:absolute;
+	top:170px;
+	left:122px;
+}
+#lblAge6{
+	font-weight:bold;
+}
+.divLine2{
+	position:absolute;
+	height:.7%;
+	width:82%;
+	background-color:lightgray;
+	opacity:.8;
+	border-radius:2px;
+	top:140%;
+	left:8%;
+}
+#lblDate{
+	position:absolute;
+	top:145%;
+	left:8%;
+	
+}
+#txtDate{
+	position:absolute;
+	top:149%;
+	left:8%;
+	width:20%;
+	height:3.5%;
+}
+#btnConvert{
+	position:absolute;
+	top:148.8%;
+	left:29.5%;
+	background-color:#c70039;
+	height:5%;
+	width:8%;
+	color:white;
+	font-size:11px;
+	cursor:pointer;
+	
+}
+ul:hover{
+	cursor:pointer;
+}
+
+#btnCount{
+	position:absolute;
+	top:155%;
+	left:8%;
+	
+}
+

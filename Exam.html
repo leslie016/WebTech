@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Technical Exam</title>
+	<link rel="stylesheet" type="text/css" href="Exam.css">
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>   
+	
+	<script>
+	
+		$(document).ready(function(){
+			$("#age").on("change",function(){
+					var selected = this.value;
+					
+					if(selected=="All"){
+					
+						$("#divTan").show(300);
+						$("#divDavid").show(300);
+						$("#divJessica").show(300);
+						$("#divTan1").show(300);
+						$("#divDavid1").show(300);
+						$("#divJessica1").show(300);
+					}
+					
+					else if(selected=="20andbelow"){
+						$("#divJessica").hide(300);
+						$("#divTan1").hide(300);
+						$("#divJessica1").hide(300);
+						$("#divDavid1").show(300);
+						$("#divDavid").show(300);
+						$("#divTan").show(300);
+					
+					}
+					else if(selected=="21to39"){
+						$("#divTan").hide(300);
+						$("#divTan1").hide(300);
+						$("#divDavid").hide(300);
+						$("#divDavid1").hide(300);
+						$("#divJessica").show(300);
+						$("#divJessica1").show(300);
+						
+					}
+					else{
+						$("#divTan").hide(300);
+						$("#divDavid").hide(300);
+						$("#divJessica").hide(300);
+						$("#divTan1").show(300);
+						$("#divDavid1").hide(300);
+						$("#divJessica1").hide(300);
+					
+					}
+					
+					
+				});
+				
+		
+				
+					
+				
+			
+		});
+		
+		
+		function fncConvert(){
+			var str=document.getElementById("txtDate").value;
+			
+			var myDate = new Date(str);
+			console.log(myDate);
+			var d=myDate.getDate();
+			var m = myDate.getMonth();
+			m+=1;
+			var y = myDate.getFullYear();
+			
+			if((m<=12) && (d<=31)){
+			var newdate=(y +  "/" + d + "/" + m );
+			alert("Converted Date: " + newdate);
+			}
+			else{
+				alert("invalid date");
+			}
+		}	
+		
+		
+		
+		
+	</script>
+	
+
+</head>
+
+
+
+
+<body>
+
+	
+	
+	<div class="div2">
+		<h1 class="h3">District Manager</h1>
+	</div>
+	
+	<div>
+		<label class="lblFilter">Filter By Age</label>
+		
+		<form>
+		
+			<select name="age" id="age">
+				<option id="all" value="All" selected>All</option>
+				<option id="twentybelow" value="20andbelow">20 and below</option>
+				<option value="21to39">21 to 39</option>
+				<option value="40andabove">40 and above</option>
+			</select>
+		
+		</form>
+	
+	
+	</div>
+	
+	<div class="divLine1">
+	</div>
+
+	<div>
+		<div id="divTan">
+			
+			<img id="userphoto1" src="C:\Users\User\Desktop\TechnicalExam\userphoto.png"></img>
+			
+			<span><label id="lblTan">TAN MEI MEI</label></span>
+			<span id="email1">Email:<label id="lblEmail1"> mel@gmail.com</label></span>
+			<span id="mobile1">Mobile:<label id="lblMob1"> 0122121244</label></span>
+			<span id="company1">Company:<label id="lblCom1"> ABC Sdn.Bhd.</label></span>
+			<span id="address1">Address:<label id="lblAdd1"> Jalan Ampang </label></span>
+			<span id="website1">Website:<label id="lblWeb1"> abc.com.my</label></span>
+			<span id="age1">Age:<label id="lblAge1"> 19</label> </span>
+		</div>
+		
+		<div id="divDavid">
+			
+			<img id="userphoto2" src="C:\Users\User\Desktop\TechnicalExam\userphoto.png"></img>
+			
+			<span><label id="lblDavid">DAVID WONG</label></span>
+			<span id="email2">Email:<label id="lblEmail2"> david@gmail.com</label></span>
+			<span id="mobile2">Mobile:<label id="lblMob2"> 0163233333</label></span>
+			<span id="company2">Company:<label id="lblCom2"> Def Sdn.Bhd.</label></span>
+			<span id="address2">Address:<label id="lblAdd2"> Jalan Ampang </label></span>
+			<span id="website2">Website:<label id="lblWeb2"> def.com.my</label></span>
+			<span id="age2">Age:<label id="lblAge2"> 20</label> </span>
+		
+		</div>
+		
+		<div id="divJessica">
+		
+			<img id="userphoto3" src="C:\Users\User\Desktop\TechnicalExam\userphoto.png"></img
+			
+			<span><label id="lblJessica">JESSICA LEE</label></span>
+			<span id="email3">Email:<label id="lblEmail3"> jess@gmail.com</label></span>
+			<span id="mobile3">Mobile:<label id="lblMob3"> 0128645444</label></span>
+			<span id="company3">Company:<label id="lblCom3"> GHJ Sdn.Bhd.</label></span>
+			<span id="address3">Address:<label id="lblAdd3"> Jalan Ampang </label></span>
+			<span id="website3">Website:<label id="lblWeb3"> GHJ.com.my</label></span>
+			<span id="age3">Age:<label id="lblAge3"> 34</label> </span>
+			
+		
+		</div>
+		
+		<div id="divTan1">
+			
+			<img id="userphoto4" src="C:\Users\User\Desktop\TechnicalExam\userphoto.png"></img>
+			
+			<span><label id="lblTan1">TAN MEI MEI</label></span>
+			<span id="email4">Email:<label id="lblEmail4"> mel@gmail.com</label></span>
+			<span id="mobile4">Mobile:<label id="lblMob4"> 0122121244</label></span>
+			<span id="company4">Company:<label id="lblCom4"> ABC Sdn.Bhd.</label></span>
+			<span id="address4">Address:<label id="lblAdd4"> Jalan Ampang </label></span>
+			<span id="website4">Website:<label id="lblWeb4"> abc.com.my</label></span>
+			<span id="age4">Age:<label id="lblAge4"> 41</label> </span>
+		</div>
+		
+		<div id="divDavid1">
+			
+			<img id="userphoto5" src="C:\Users\User\Desktop\TechnicalExam\userphoto.png"></img>
+			
+
+			
+			<span><label id="lblDavid1">DAVID WONG</label></span>
+			<span id="email5">Email:<label id="lblEmail5"> david@gmail.com</label></span>
+			<span id="mobile5">Mobile:<label id="lblMob5"> 0163233333</label></span>
+			<span id="company5">Company:<label id="lblCom5"> Def Sdn.Bhd.</label></span>
+			<span id="address5">Address:<label id="lblAdd5"> Jalan Ampang </label></span>
+			<span id="website5">Website:<label id="lblWeb5"> def.com.my</label></span>
+			<span id="age5">Age:<label id="lblAge5"> 20</label> </span>
+		</div>
+		
+		<div id="divJessica1">
+			
+			<img id="userphoto6" src="C:\Users\User\Desktop\TechnicalExam\userphoto.png"></img>
+			
+			<span><label id="lblJessica1">JESSICA LEE</label></span>
+			<span id="email6">Email:<label id="lblEmail6"> jess@gmail.com</label></span>
+			<span id="mobile6">Mobile:<label id="lblMob6"> 0128645444</label></span>
+			<span id="company6">Company:<label id="lblCom6"> GHJ Sdn.Bhd.</label></span>
+			<span id="address6">Address:<label id="lblAdd6"> Jalan Ampang </label></span>
+			<span id="website6">Website:<label id="lblWeb6"> GHJ.com.my</label></span>
+			<span id="age6">Age:<label id="lblAge6"> 34</label> </span>
+		</div>
+		
+		
+	
+	</div>
+	
+	<div class="divLine2">
+		
+	
+	</div>
+	
+	
+		
+		
+	<div>
+		
+		<label id="lblDate">Date</label>
+		<input id="txtDate" type="text"></input>
+		<button onclick="fncConvert()" id="btnConvert">CONVERT</button>
+		
+		<button id="btnCount">Count</button>
+		
+		<script>
+		
+			var count=0;
+			var btn = document.getElementById("btnCount");
+			var interval;
+			
+			btnCount.onclick = function(){
+			
+			interval = setInterval(countFunc,1000);
+		
+			}
+		
+			function countFunc(){
+			
+				count++;
+				disp=count;
+			
+			
+				if(disp%3==0){
+					console.log("Foo");
+				}
+				else if(disp%5==0){
+					console.log("Bar");
+				}
+				else{
+					console.log(disp);
+					
+				}
+				stopFunc();
+			}
+			function stopFunc(){
+				if(count>=100){
+					clearInterval(interval);
+			}
+		}
+		
+		</script>
+	
+	</div>
+	
+	<div class="nav">
+		<img class="logo" src="C:\Users\User\Desktop\TechnicalExam\logo.png"></img>
+		
+		<ul class="navlist">
+			<li class="list">OUR PRODUCTS</li>
+			<li class="list">ABOUT US</li>
+			<li class="list">LIVE BETTER</li>
+			<li class="list">CLAIMS & SUPPORT</li>
+			<li class="list">MY ACCOUNT</li>
+		</ul>
+	
+	</div>
+	
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
+
